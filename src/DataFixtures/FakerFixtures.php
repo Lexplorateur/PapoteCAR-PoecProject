@@ -8,7 +8,10 @@
 
 namespace App\DataFixtures;
 
+use App\Entity\City;
 use App\Entity\Member;
+use App\Entity\Run;
+use App\Entity\Comment;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
@@ -35,6 +38,7 @@ class FakerFixtures extends Fixture implements FixtureInterface
 
         // on créé 10 personnes
         for ($i = 0; $i < 100; $i++) {
+            // member
             $member = new Member();
             $member->setFirstname($faker->firstName);
             $member->setLastname($faker->lastName);
@@ -49,6 +53,23 @@ class FakerFixtures extends Fixture implements FixtureInterface
             //$member->setComments($faker->realText(1000));
 
             $manager->persist($member);
+
+            // city
+            $city = new City();
+            $city->setZipcode($faker->numberBetween($min = 10000, $max = 99999));
+            $city->setCityName($faker->$city);
+
+            $manager->persist($city);
+
+            // comment
+            $comment = new Comment();
+            $comment->setContent($faker->realText());
+            $comment->setWriter();
+            $comment->setTarget();
+
+            // run
+            $run = new Run();
+
         }
 
         $manager->flush();
