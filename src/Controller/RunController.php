@@ -121,6 +121,7 @@ class RunController extends Controller
 
             $run->setPlaces($run->getPlaces()-1);
             $run->addPasenger($this->getUser());
+            $this->getUser()->addReservedRun($run);
             $em->persist($run);
             $em->flush();
             return $this->redirectToRoute('listRuns');
@@ -130,4 +131,26 @@ class RunController extends Controller
 
     }
 
+
+    /**
+     * @Route("/run/cancel/{id}", name="cancelRun")
+     */
+    public function cancelReservation(EntityManagerInterface $em, $id){
+        $run = $em->getRepository(Run::class)->find($id);
+
+        if($run->getPasengers()->contains($this->getUser())){
+
+            $run->removePasenger($this->getUser());
+            $run->setPlaces($run->getPlaces()+1);
+
+
+            $this->getUser()->removeReservedRun($run);
+
+            $em->persist($run);
+            $em->flush();
+
+            return $this->redirectToRoute('account');
+
+        }
+    }
 }

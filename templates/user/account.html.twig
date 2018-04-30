@@ -38,4 +38,18 @@
 
         <p> No runs where you drive !</p>
     {% endfor %}
+
+    <h2> Runs where I am pasenger</h2>
+    {% for run in app.user.reservedRuns %}
+
+        <h4>{{ run.departureSchedule |date("d-m-Y") }} - {{ run.departureSchedule |date("H:i") }}</h4>
+
+        <p>DEPART = {{ run.departure.cityName }}</p>
+        <p>ARRIVEE = {{ run.arrival.cityName }}</p>
+
+        <a href="{{ path('cancelRun', {'id': run.id}) }}">Cancel</a>
+
+    {% else %}
+        No reserved runs
+    {% endfor %}
 {% endblock %}
