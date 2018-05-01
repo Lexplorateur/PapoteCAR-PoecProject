@@ -36,7 +36,7 @@ class FakerFixtures extends Fixture implements FixtureInterface
         // On configure dans quelles langues nous voulons nos données
         $faker = Faker\Factory::create('fr_FR');
 
-        // on créé 10 personnes
+        // on créé 100 personnes
         for ($i = 0; $i < 100; $i++) {
             // member
             $member = new Member();
@@ -54,26 +54,37 @@ class FakerFixtures extends Fixture implements FixtureInterface
 
             $manager->persist($member);
 
-            // city
-            $city = new City();
-            $city->setZipcode($faker->numberBetween($min = 10000, $max = 99999));
-            $city->setCityName($faker->$city);
-
-            $manager->persist($city);
-
             // comment
             $comment = new Comment();
             $comment->setContent($faker->realText());
-            $comment->setWriter();
-            $comment->setTarget();
+            $comment->setWriter($member);
+            $comment->setTarget($member);
+
+            $manager->persist($comment);
+
+            // city
+            $city = new City();
+            $city->setZipcode($faker->numberBetween($min = 10000, $max = 99999));
+            $city->setCityName($faker->city);
+
+            $manager->persist($city);
 
             // run
             $run = new Run();
+            $run->setDriver($member);
+            $run->setPlaces($faker->numberBetween($min = 1, $max = 5));
+            $run->setPrice($faker->randomFloat(2,10,200));
+            $run->setDeparture($city);
+            $run->setArrival($city);
+            $run->setDepartureSchedule($faker->dateTime('now',null));
 
+            $manager->persist($run);
         }
 
         $manager->flush();
     }
+
+    // pour lancer faker -> php bin/console doctrine:fixtures:load
 
 
 
