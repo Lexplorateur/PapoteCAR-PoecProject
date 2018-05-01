@@ -4,19 +4,52 @@
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            <link rel="stylesheet" href="../public/{{ asset('scss/style.css') }}"/>
+        {% endblock %}
     </head>
     <body>
-    {% for label, messages in app.flashes %}
-        {% for message in messages %}
-            <div class="alert alert-{{ label }}">
-                {{ message }}
+        <header class="header">
+            <div class="title-header">
+                <a href="index.html">
+                    <img src="{{ asset('img/logo.png') }}" alt="le logo de PapoteCAR"> <!-- chemin vers ACCUEIL ici -->
+                </a>
+                <h1>Papote<span>car</span></h1>
             </div>
-        {% endfor %}
-    {% endfor %}
-    {% block body %}
+            <div class="connect">
+                <a href="inscription.html">S'inscrire</a> <!-- chemin vers formulaire INSCRIPTION ici -->
+                <span> | </span>
+                <a href="connexion.html">Se connecter</a> <!-- chemin vers formulaire CONNEXION ici -->
+            </div>
+        </header>
 
-    {% endblock %}
+        {% for label, messages in app.flashes %}
+            {% for message in messages %}
+                <div class="alert alert-{{ label }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endfor %}
+
+        {% block body %}
+
+        {% endblock %}
+
+        <footer>
+            <div class="container-footer">
+                <div>
+                    <img src="img/Logo-blanc.png" alt="le logo PapoteCAR en Blanc">
+                    <p>PapoteCAR, 2018&copy;</p>
+                </div>
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">S'inscrire</a></li>
+                    <li><a href="#">Se connecter</a></li>
+                </ul>
+            </div>
+        </footer>
+
         {% block javascripts %}{% endblock %}
     </body>
 </html>
