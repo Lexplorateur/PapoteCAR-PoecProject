@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Comment{% endblock %}
+
+{% block body %}
+    <h1>Commenter</h1>
+
+    <div>
+        {{ form_start(commentForm) }}
+
+        {#{ form_label(commentForm.title) }#}
+        {#{ form_errors(commentForm.title) }#}
+        {#{ form_widget(commentForm.title) }#}
+
+        {{ form_widget(commentForm) }}
+        <button class="btn btn-success">Ajouter</button>
+        {{ form_end(commentForm) }}
+    </div>
+
+    <h5>Commentaires</h5><!--Last Comments-->
+    <div>
+        {% for comment in member.comments %}
+            <div>
+                <div>{{ comment.content }}</div>
+                <h6>
+                    <b>By {{ comment.writer }}</b>
+                </h6>
+
+                <br>
+            </div>
+        {% else %}
+            <h6>No comments yet!</h6>
+        {% endfor %}
+    </div>
+{% endblock %}
