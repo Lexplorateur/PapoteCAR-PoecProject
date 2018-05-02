@@ -164,8 +164,8 @@ class RunController extends Controller
             return $this->redirectToRoute('detailRun', ["id" => $id]);
         }
 
-        return $this->render('movie/detail.html.twig', [
-            "movie" => $movie,
+        return $this->render('run/detail.html.twig', [
+            "run" => $run,
             "commentForm" => $commentForm->createView()
         ]);
     }
