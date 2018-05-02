@@ -39,7 +39,7 @@ class Member implements UserInterface
     private $email;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $password;
 
@@ -47,11 +47,6 @@ class Member implements UserInterface
      * @ORM\Column(type="integer")
      */
     private $tel;
-
-    /**
-     * @ORM\Column(type="float", nullable=true)
-     */
-    private $note;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
@@ -173,17 +168,7 @@ class Member implements UserInterface
         return $this;
     }
 
-    public function getNote(): ?float
-    {
-        return $this->note;
-    }
 
-    public function setNote(float $note): self
-    {
-        $this->note = $note;
-
-        return $this;
-    }
 
     public function getPicture(): ?string
     {

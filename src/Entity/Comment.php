@@ -2,8 +2,6 @@
 
 namespace App\Entity;
 
-use Symfony\Component\Validator\Constraints as Assert;
-
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -20,6 +18,7 @@ class Comment
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\member", inversedBy="comments")
+     * @ORM\JoinColumn(nullable=false)
      */
     private $writer;
 
@@ -30,15 +29,11 @@ class Comment
     private $target;
 
     /**
-     * @Assert\Length(
-     *     max="4000",
-     *     maxMessage="Your comment is too long dude! 4000 max!",
-     *     min="2",
-     *     minMessage="2 chars minimum please !"
-     * )
-     *
-     * @Assert\NotBlank(message="Please provide a comment!")
-     *
+     * @ORM\Column(type="float", nullable=true)
+     */
+    private $note;
+
+    /**
      * @ORM\Column(type="text")
      */
     private $content;
@@ -68,6 +63,18 @@ class Comment
     public function setTarget(?member $target): self
     {
         $this->target = $target;
+
+        return $this;
+    }
+
+    public function getNote(): ?float
+    {
+        return $this->note;
+    }
+
+    public function setNote(float $note): self
+    {
+        $this->note = $note;
 
         return $this;
     }

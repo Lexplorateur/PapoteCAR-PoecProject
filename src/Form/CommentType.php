@@ -15,12 +15,28 @@ class CommentType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $member = $options['member'];
-        $run = $options['run'];
-        $message = '';
         $builder
             ->add('content', null, [
                 "label" => "Your comment"
             ]);
+            if($member == null){
+                $builder
+                    ->add('writer', null, [
+                        "attr" => [
+                            "placeholder" => "Taper votre email"
+                        ]
+                    ]);
+            }
+            $builder
+                ->add('target', null, [
+                    "label" => "Your target"
+                ])
+                ->add('note', null, [
+                    "attr" => [
+                        "placeholder" => "Noter la personnes"
+                    ]
+                ]);
+            /*
             if($member == null){
                 $message = "Vous n'êtes pas connecté !";
             }else if($member){
@@ -36,14 +52,15 @@ class CommentType extends AbstractType
                 $builder
                     ->add('target')
                     ->add('note');
-            }
+            }*/
     }
 
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => Comment::class,
-            'user' => null
+            'attr' => ['novalidate' => 'novalidate'],
+            'data_class' => Member::class,
+            'member' => null
         ]);
     }
 }

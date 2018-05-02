@@ -87,6 +87,14 @@ class Run
         return $this->pasengers;
     }
 
+    /**
+     * @param mixed $pasengers
+     */
+    public function setPasengers($pasengers): void
+    {
+        $this->pasengers = $pasengers;
+    }
+
     public function addPasenger(Member $pasenger): self
     {
         if (!$this->pasengers->contains($pasenger)) {

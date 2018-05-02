@@ -25,6 +25,11 @@
                 <h6>
                     <b>By {{ comment.writer }}</b>
                 </h6>
+                {% if(comment.note == null)%}
+                <h6>
+                    <b>Note : {{ comment.note }}/5</b>
+                </h6>
+                {% endif %}
 
                 <br>
             </div>

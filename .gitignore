@@ -1,7 +1,12 @@
 
-###> symfony/framework-bundle ###
+###> symfony/framework-bundle 
+###
 /.env
 /public/bundles/
 /var/
 /vendor/
-###< symfony/framework-bundle ###
+/.idea/
+/.idea
+.idea
+
+###< symfony/framework-bundle
