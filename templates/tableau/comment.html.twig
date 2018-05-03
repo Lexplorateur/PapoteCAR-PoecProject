@@ -1,0 +1,35 @@
+{% extends 'tableau.html.twig' %}
+
+{% block title %}Comments{% endblock %}
+
+{% block body %}
+    <h3>Comments</h3>
+    {% for comment in member.comments %}
+        <div class="comment">
+            <div class="img-rider">
+                {% if app.user.picture != null %}
+                    <div class="img-profil-rider" style="background-image:url('{{ app.user.picture }}')"></div>
+                {% else %}
+                    <div class="img-profil-rider" style="background-image:url('{{ asset('img/dog.jpg') }}'); -webkit-filter: saturate(40%);"></div>
+                {% endif %}
+            </div>
+            <div class="name-step">
+                {# writer #}
+                <p class="name">{{ comment.writer }}</p>
+                <p class="content-comment">
+                    {{ comment.content }}
+                </p>
+            </div>
+            <div class="notation">
+                {% if(comment.note == null)%}
+                    <p>
+                        <b>Note : {{ comment.note }}/5</b>
+                    </p>
+                {% endif %}
+            </div>
+        </div>
+        <hr class="line-comment">
+    {% else %}
+        <h6>No comments yet!</h6>
+    {% endfor %}
+{% endblock %}
