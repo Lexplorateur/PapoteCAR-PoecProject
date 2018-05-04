@@ -2,131 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ab9c0d1-b1ce-492f-935e-38bbb053c7b6" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/.env.dist" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/bin/console" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/composer.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/composer.lock" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/config/bundles.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/config/packages/dev/easy_log_handler.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/config/packages/dev/monolog.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/config/packages/dev/routing.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/config/packages/dev/web_profiler.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/config/packages/doctrine.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/config/packages/doctrine_migrations.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/config/packages/framework.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/config/packages/prod/doctrine.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/config/packages/prod/monolog.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/config/packages/routing.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/config/packages/security.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/config/packages/test/framework.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/config/packages/test/monolog.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/config/packages/test/web_profiler.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/config/packages/translation.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/config/packages/twig.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/config/routes.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/config/routes/annotations.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/config/routes/dev/twig.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/config/routes/dev/web_profiler.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/config/services.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/.htaccess" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/check.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/css/.sass-cache/00fb149e7cc81a6f565d1d615d60cc7d5126a53d/fonts.scssc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/css/.sass-cache/00fb149e7cc81a6f565d1d615d60cc7d5126a53d/mixins.scssc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/css/.sass-cache/00fb149e7cc81a6f565d1d615d60cc7d5126a53d/variables.scssc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/css/.sass-cache/19fa9d889db493c2c15cc8b3a2c213dc791cd09b/base.scssc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/css/.sass-cache/19fa9d889db493c2c15cc8b3a2c213dc791cd09b/mixins.scssc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/css/.sass-cache/19fa9d889db493c2c15cc8b3a2c213dc791cd09b/variables.scssc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/css/.sass-cache/27c08182f36531c4a79b8ebd23afae176dc2c9d1/base.scssc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/css/.sass-cache/27c08182f36531c4a79b8ebd23afae176dc2c9d1/fonts.scssc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/css/.sass-cache/27c08182f36531c4a79b8ebd23afae176dc2c9d1/mixins.scssc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/css/.sass-cache/27c08182f36531c4a79b8ebd23afae176dc2c9d1/variables.scssc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/css/.sass-cache/43b3dae6a0bf3b341a152a8f5f527f2450edc2fc/style.scssc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/css/.sass-cache/b27da6711a6046116ff72a180413cdb842c804f2/style.scssc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/css/.sass-cache/f90e5486527a1bde4a4fd895c6db733a10b3c83e/style.scssc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/css/font/Lato-Black.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/css/font/Lato-Bold.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/css/font/Lato-Light.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/css/font/Lato-Regular.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/css/import/base.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/css/import/mixins.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/css/import/variables.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/css/style.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/css/style.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/css/style.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/img/ali.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/img/arrow.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/img/auto-stop.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/img/banniere-mobile.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/img/banniere.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/img/calendar.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/img/destination.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/img/ecolo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/img/economie.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/img/emmanuel.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/img/jordan.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/img/laetitia.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/img/localisation.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/img/logo-blanc.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/img/logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/img/menu.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/img/mickael.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/img/nicolas.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/img/socio.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/img/stresse.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/img/valentin.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/index.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/public/js/script.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/src/Controller/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/src/Controller/AppController.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/src/Controller/RunController.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/src/Controller/UserController.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/src/DataFixtures/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/src/DataFixtures/FakerFixtures.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/src/Entity/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/src/Entity/City.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/src/Entity/Comment.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/src/Entity/Member.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/src/Entity/Run.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/src/Form/CommentType.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/src/Form/RegisterType.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/src/Form/RunType.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/src/Kernel.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/src/Migrations/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/src/Repository/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/src/Repository/CityRepository.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/src/Repository/CommentRepository.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/src/Repository/MemberRepository.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/src/Repository/RunRepository.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/symfony.lock" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/templates/app/comment.html.twig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/templates/app/home.html.twig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/templates/base.html.twig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/templates/macros/form_search.html.twig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/templates/macros/is_active.html.twig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/templates/run/addRun.html.twig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/templates/run/detailRun.html.twig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/templates/run/listRuns.html.twig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/templates/tableau.html.twig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/templates/tableau/ride_to_court.html.twig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/templates/tableau/search_ride.html.twig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/templates/user/account.html.twig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/templates/user/list.html.twig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/templates/user/login.html.twig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/templates/user/register.html.twig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/templates/user/userProfile.html.twig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/translations/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Controller/CommentController.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/comment/index.html.twig" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RunController.php" afterPath="$PROJECT_DIR$/src/Controller/RunController.php" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Comment.php" afterPath="$PROJECT_DIR$/src/Entity/Comment.php" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Member.php" afterPath="$PROJECT_DIR$/src/Entity/Member.php" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Run.php" afterPath="$PROJECT_DIR$/src/Entity/Run.php" />
-      <change beforePath="$PROJECT_DIR$/src/Form/CommentType.php" afterPath="$PROJECT_DIR$/src/Form/CommentType.php" />
-      <change beforePath="$PROJECT_DIR$/templates/app/comment.html.twig" afterPath="$PROJECT_DIR$/templates/app/comment.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -170,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommentController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CommentController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/CommentController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="17">
               <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
               <folding>
                 <element signature="e#34#57#0#PHP" expanded="true" />
@@ -192,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Member.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Member.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entity/Member.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="307">
@@ -258,9 +134,9 @@
         <option value="$PROJECT_DIR$/var/cache/dev/doctrine/orm/Proxies/__CG__AppEntityMember.php" />
         <option value="$PROJECT_DIR$/src/Controller/RunController.php" />
         <option value="$PROJECT_DIR$/src/Entity/Member.php" />
-        <option value="$PROJECT_DIR$/src/Controller/CommentController.php" />
         <option value="$PROJECT_DIR$/src/Form/CommentType.php" />
         <option value="$PROJECT_DIR$/src/Entity/Comment.php" />
+        <option value="$PROJECT_DIR$/src/Controller/CommentController.php" />
       </list>
     </option>
   </component>
@@ -356,7 +232,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-6" />
     <option name="y" value="5" />
-    <option name="width" value="659" />
+    <option name="width" value="1113" />
     <option name="height" value="724" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -461,7 +337,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../papotecar_swatalpha-nonok2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
@@ -517,18 +393,19 @@
       <workItem from="1525422889245" duration="51000" />
       <workItem from="1525423571164" duration="10608000" />
       <workItem from="1525442160752" duration="669000" />
-      <workItem from="1525442883193" duration="392000" />
+      <workItem from="1525442883193" duration="1350000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116650000" />
+    <option name="totallyTimeSpent" value="117608000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="5" width="659" height="724" extended-state="0" />
+    <frame x="-6" y="5" width="1113" height="724" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24040067" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13675214" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -536,7 +413,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3122807" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3122807" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -832,16 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/CommentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-          <folding>
-            <element signature="e#34#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/tableau/comment.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -871,6 +738,16 @@
         <state relative-caret-position="307">
           <caret line="423" column="31" lean-forward="false" selection-start-line="423" selection-start-column="31" selection-end-line="431" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/CommentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding>
+            <element signature="e#34#57#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
