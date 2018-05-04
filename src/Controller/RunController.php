@@ -4,8 +4,6 @@ namespace App\Controller;
 
 use App\Entity\Run;
 use App\Form\RunType;
-use App\Form\CommentType;
-use App\Repository\CommentRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
@@ -127,46 +125,5 @@ class RunController extends Controller
             $em->flush();
             return $this->redirectToRoute('listRuns');
         }
-    }
-
-    public function notationMember($id, Request $request, EntityManagerInterface $em){
-        //créer un formulaire de comment vide
-        $comment = new Comment();
-
-        //et l'associe au film
-        $comment->setTarget($target);
-
-        $user = $this->getUser();
-
-        //si l'utilisateur est connecté alors ont prend ses informations sinon non
-        if($user)
-        {
-            $comment->setEmail($user->getEmail());
-        }
-        //créer un formulaire en lui associant notre comment vide
-        $commentForm = $this->createForm(CommentType::class, $comment, ['user'=>$this->getUser()]);
-
-        //prend les données envoyées et les injectent dans $comment
-        $commentForm->handleRequest(($request));
-
-
-        //si le formulaire est soumis...
-        if($commentForm->isSubmitted() && $commentForm->isValid()){
-
-
-            //sauvegarde l'entité en base de données
-            $em->persist($comment);
-            $em->flush();
-
-            //stocke un message en session pour affichage sur la page suivante
-            $this->addFlash("success", "Your comment has been published!");
-            //rediriger l'utilisateur ici-même pour vider le formulaire
-            return $this->redirectToRoute('detailRun', ["id" => $id]);
-        }
-
-        return $this->render('run/detail.html.twig', [
-            "run" => $run,
-            "commentForm" => $commentForm->createView()
-        ]);
     }
 }

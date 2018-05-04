@@ -38,6 +38,12 @@ class Comment
      */
     private $content;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Member", inversedBy="comments")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $member;
+
     public function getId()
     {
         return $this->id;
@@ -48,7 +54,7 @@ class Comment
         return $this->writer;
     }
 
-    public function setWriter(?member $writer): self
+    public function setWriter(Member $writer): self
     {
         $this->writer = $writer;
 
@@ -60,7 +66,7 @@ class Comment
         return $this->target;
     }
 
-    public function setTarget(?member $target): self
+    public function setTarget(Member $target): self
     {
         $this->target = $target;
 
@@ -90,4 +96,18 @@ class Comment
 
         return $this;
     }
+
+    public function getMember()
+    {
+        return $this->member;
+    }
+
+    public function setMember($member): void
+    {
+        $this->member = $member;
+    }
+
+
+
+
 }

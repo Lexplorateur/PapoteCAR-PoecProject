@@ -17,23 +17,23 @@ class CommentType extends AbstractType
         $member = $options['member'];
         $builder
             ->add('content', null, [
-                "label" => "Your comment"
+                "label" => "Votre commentaire :"
             ]);
             if($member == null){
                 $builder
                     ->add('writer', null, [
                         "attr" => [
-                            "placeholder" => "Taper votre email"
+                            "placeholder" => "Connectez-vous"
                         ]
                     ]);
             }
             $builder
                 ->add('target', null, [
-                    "label" => "Your target"
+                    "label" => "Votre cible:"
                 ])
                 ->add('note', null, [
                     "attr" => [
-                        "placeholder" => "Noter la personnes"
+                        "placeholder" => "Noter la personnes :"
                     ]
                 ]);
             /*

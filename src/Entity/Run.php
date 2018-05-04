@@ -113,6 +113,13 @@ class Run
         return $this;
     }
 
+    public function criticizedPasenger(Member $pasenger){
+        if ($this->pasengers->contains($pasenger)){
+            $this->pasengers[$pasenger] = $pasenger;
+        }
+        return $this;
+    }
+
     public function getDeparture(): ?City
     {
         return $this->departure;

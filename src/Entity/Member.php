@@ -93,6 +93,8 @@ class Member implements UserInterface
      */
     private $runsAttended;
 
+    private $member;
+
     public function __construct()
     {
         $this->comments = new ArrayCollection();
@@ -417,5 +419,15 @@ class Member implements UserInterface
     public function eraseCredentials()
     {
 
+    }
+
+    public function getMember()
+    {
+        return $this->member;
+    }
+
+    public function setMember($member): void
+    {
+        $this->member = $member;
     }
 }

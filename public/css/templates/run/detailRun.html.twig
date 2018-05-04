@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h1>{{ run.departure.cityName }} -> {{ run.arrival.cityName }}</h1>
+
+    Pasengers:
+    <ul>
+    {% for pasenger in run.pasengers %}
+       <li> {{ pasenger.firstname }}</li>
+    {% else %}
+    {% endfor %}
+    </ul>
+
+    <h1>Commenter</h1>
+
+    <div>
+        {{ form_start(commentForm) }}
+
+        {#{ form_label(commentForm.title) }#}
+        {#{ form_errors(commentForm.title) }#}
+        {#{ form_widget(commentForm.title) }#}
+
+        {{ form_widget(commentForm) }}
+        <button class="btn btn-success">Ajouter</button>
+        {{ form_end(commentForm) }}
+    </div>
+
+    <h5>Commentaires</h5><!--Last Comments-->
+    <div>
+        {% for comment in member.comments %}
+            <div>
+                <div>{{ comment.content }}</div>
+                <h6>
+                    <b>By {{ comment.writer }}</b>
+                </h6>
+                {% if(comment.note == null)%}
+                    <h6>
+                        <b>Note : {{ comment.note }}/5</b>
+                    </h6>
+                {% endif %}
+
+                <br>
+            </div>
+        {% else %}
+            <h6>No comments yet!</h6>
+        {% endfor %}
+    </div>
+{% endblock %}
